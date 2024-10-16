@@ -1,0 +1,76 @@
+### Uncaught ReferenceError: `agde is not defined`
+
+#### কী হয়েছে:
+- এই ত্রুটি তখন ঘটে যখন আপনি কোনো ভেরিয়েবল `agde` ব্যবহার করছেন যা ঘোষণা করা হয়নি বা ভুলভাবে বানান করা হয়েছে।
+
+#### কেন ঘটে:
+- **টাইপো (ভুল বানান)**: সম্ভবত ভেরিয়েবলের নাম ভুলভাবে লেখা হয়েছে (যেমন, `age` এর বদলে `agde`)।
+
+#### ত্রুটির উদাহরণ:
+```javascript
+let age = 25;
+
+function verifyAge() {
+    if (agde >= 18) {  // টাইপো: 'agde' হওয়া উচিত ছিল 'age'
+        console.log("আপনি একজন প্রাপ্তবয়স্ক।");
+    }
+}
+```
+
+#### কীভাবে ঠিক করবেন:
+1. **টাইপো চেক করুন**: ভেরিয়েবলের সঠিক বানান নিশ্চিত করুন।
+2. **ঘোষণা করা হয়েছে কি না দেখুন**: ভেরিয়েবল ঘোষণা করা হয়েছে কি না তা পরীক্ষা করুন।
+
+#### সঠিক কোড:
+```javascript
+let age = 25;
+
+function verifyAge() {
+    if (age >= 18) {  // টাইপো ঠিক করা হয়েছে: এখন 'age'
+        console.log("আপনি একজন প্রাপ্তবয়স্ক।");
+    }
+}
+
+verifyAge();  // এখন এটি কাজ করবে
+```
+
+------------------------------------------------------------------------------------------- 
+
+
+### Uncaught ReferenceError: `agde is not defined`
+
+#### What Happened:
+- The error occurs because a variable named `agde` is used but hasn't been declared or is spelled incorrectly.
+
+#### Why It Happens:
+- **Typo**: The variable name is likely misspelled (e.g., `age` vs. `agde`).
+
+#### Example of the Error:
+```javascript
+let age = 25;
+
+function verifyAge() {
+    if (agde >= 18) {  // Typo: 'agde' should be 'age'
+        console.log("You are an adult.");
+    }
+}
+```
+
+#### How to Fix:
+1. **Check for Typos**: Correct the spelling of the variable.
+2. **Make Sure the Variable is Declared**.
+
+#### Corrected Code:
+```javascript
+let age = 25;
+
+function verifyAge() {
+    if (age >= 18) {  // Fixed typo: now 'age'
+        console.log("You are an adult.");
+    }
+}
+
+verifyAge();  // Now it works
+```
+
+(* ----------------------------------------------------------------------------------- *)
